@@ -13,13 +13,17 @@ body{
   font-family: sans-serif;
   font-size: 16px;
   margin: 1.2em;
+  background-image: url("images/pigeon-background.JPEG");
+  background-color: #fffff9;
   background-size: cover ;
   background-position: center;
+
 }
 
 main{
-  margin-bottom: 100px;
+  font-family: 'Andika', sans-serif;
 }
+
 
 h1{
   color: #8000FF;
@@ -28,41 +32,73 @@ h1{
   text-align: center;
 }
 
-caption{
-  margin:5px 0px;
+caption{margin:5px 0px;}
+
+p{
+  color: black;
+  font-size: 16px;
+  padding-top: 10px;
+  }
+
+a:link {
+  color: #C12258;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
 
-p{}
+a:visited {
+  color: #B21F50;
+}
 
-a{}
+a:hover {
+  border: 2px solid black;
+}
 
 table{
-    border: 2px solid black;
+  align-content: center;
+  border: 2px solid black;
+
 }
 
 .colhead{
   background-color: #7e0820;
   color: white;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .rowhead{}
 
+.datacite{
+  color: black;
+}
+
 td{
+  text-align: center;
   padding: 15px;
 }
 
-tr{}
+tr{border: 2px solid black;}
 
 *{}
+tr:nth-child(odd) {background-color: #d1d1d1;}
+tr:nth-child(even) {background-color: none;}
+tr:hover {background-color: rgba(126,8,32,0.5);}
 
-thead tr:first-child th:first-child{}
 
-footer{
+thead tr:first-child th:first-child{
+
+}
+
+footer, p {
   position:fixed;
   left:0px;
   bottom:0px;
   width:100%;
   background:black;
   text-align:center;
-  color: white;
+  color:white;
+  min-height: 60px;
 }
