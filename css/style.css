@@ -22,6 +22,7 @@ body{
 
 main{
   font-family: 'Andika', sans-serif;
+
 }
 
 
@@ -55,9 +56,11 @@ a:hover {
 }
 
 table{
-  align-content: center;
+  margin: auto;
   border: 2px solid black;
-
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-collapse: separate;
 }
 
 .colhead{
@@ -69,28 +72,62 @@ table{
   text-transform: uppercase;
 }
 
-.rowhead{}
+.rowhead{
 
-.datacite{
-  color: black;
 }
 
-td{
+.datacite{
+  font-size: 12px;
+}
+
+
+td:not(:last-child){
   text-align: center;
   padding: 15px;
 }
 
-tr{border: 2px solid black;}
-
-*{}
-tr:nth-child(odd) {background-color: #d1d1d1;}
-tr:nth-child(even) {background-color: none;}
-tr:hover {background-color: rgba(126,8,32,0.5);}
-
-
-thead tr:first-child th:first-child{
-
+tr:last-child td:last-child{
+  border-bottom-right-radius: 15px;
 }
+
+
+tr{
+  border: 2px solid black;
+}
+
+tr:nth-child(odd) {
+  background-color: #d1d1d1;
+}
+
+tr:nth-child(even) {
+  background-color: none;
+}
+
+tr:hover {
+  background-color: rgba(126,8,32,0.5);
+}
+
+tr:last-child:hover {
+  border-bottom-right-radius: 15px;
+  }
+
+thead th:first-child {
+  border-radius: 15px 0px 0px 0px;
+}
+
+thead th:last-child {
+  border-radius: 0px 0px 15px 0px;
+}
+
+thead tr:last-child th:last-child {
+  border-radius: 0px 15px 0px 0px;
+}
+
+tbody tr:last-child th:first-child{
+  border-radius: 0px 0px 0px 15px;
+}
+
+
 
 footer, p {
   position:fixed;
