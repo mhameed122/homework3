@@ -13,12 +13,12 @@ body{
   font-family: sans-serif;
   font-size: 16px;
   margin: 1.2em;
-  background-image: url("images/pigeon-background.JPEG");
+  background-image: url("../images/pigeonback.jpeg");
   background-color: #fffff9;
   background-size: cover ;
   background-position: center;
-
 }
+
 
 main{
   font-family: 'Andika', sans-serif;
@@ -51,7 +51,7 @@ a:visited {
   color: #B21F50;
 }
 
-a:hover {
+a:focus {
   border: 2px solid black;
 }
 
